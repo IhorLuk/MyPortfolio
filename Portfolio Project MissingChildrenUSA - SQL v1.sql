@@ -20,8 +20,8 @@ SELECT
 FROM MissingChildrenInUSA_missingData
 GROUP BY missingfromcountry
 
--- Found couple cases from Mexico, Canada and Philippines. We will focus on US only (2821 rows)
--- Choose only imortant columns and US cases, create temp table for further use.
+-- Found a couple of cases from Mexico, Canada and Philippines. We will focus on US only (2821 rows)
+-- Choose only important columns and US cases, create temp table for further use.
 DROP TABLE IF EXISTS #MissingChildrenUSA_forAnalysis
 CREATE TABLE #MissingChildrenUSA_forAnalysis
 	(childid int
